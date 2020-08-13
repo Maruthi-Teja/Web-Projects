@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Please fill the form </h1>
+    </div>
+    <div class="container"> 
+     <form  action="submit.html" method="post">
+         <input type="text" name ="name" id="name" placeholder="Enter patient name">
+         <input type="text" name="age" id="age" placeholder="Enter patient Age">
+         <input type="phone" name="phone" id="number" placeholder="Enter your phone number">
+         <input  type="text" name="address" id="address" placeholder="Enter your address">
+         <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other inforamtion"></textarea>
+         <button  id="but" class="btn-hero" onclick="fun()">Submit</button>
+     </form>
+    </div>
+</body>
+</html>
+<script>
+    function fun()
+    {
+        var text = document.getElementById("but");
+        text.innerHTML="Submitted"
+        //alert("Form is Submitted");
+    }
+</script>
